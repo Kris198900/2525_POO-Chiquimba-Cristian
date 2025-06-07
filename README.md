@@ -1,2 +1,2 @@
-# 2525_POO-Chiquimba-Cristian
+# 2525-POO-Chiquimba-Cristian
 repositorio para mi tarea 
