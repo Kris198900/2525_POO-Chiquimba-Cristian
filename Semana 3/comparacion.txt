@@ -1,0 +1,15 @@
+# Comparación entre Programación Tradicional y POO
+
+| Aspecto              | Programación Tradicional                         | Programación Orientada a Objetos               |
+|----------------------|--------------------------------------------------|------------------------------------------------|
+| Estructura           | Uso de funciones independientes                 | Uso de clases y objetos                        |
+| Reutilización        | Baja, funciones ligadas al caso específico       | Alta, clases reutilizables                     |
+| Legibilidad          | Simple en programas pequeños                    | Más clara en programas complejos               |
+| Escalabilidad        | Difícil de mantener cuando crece el programa     | Fácil de extender y mantener                   |
+| Encapsulamiento      | No existe                                        | Uso de atributos privados (`__temperatura`)    |
+| Diseño               | Procedural                                       | Modular y orientado a datos y comportamientos  |
+
+## Conclusión
+
+La programación tradicional es ideal para problemas simples o pequeños, donde una estructura directa es suficiente.
+En cambio, la programación orientada a objetos (POO) permite un mejor diseño y mantenimiento del código cuando el sistema es más complejo o se espera escalarlo.
