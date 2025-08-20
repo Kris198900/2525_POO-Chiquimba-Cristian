@@ -1,5 +1,0 @@
-Jabón Líquido,Jabón,2.5,20
-Pasta Dental,Dental,3.0,30
-Cepillo de Dientes,Dental,1.5,25
-Desodorante,Higiene,4.0,10
-3,javon,1.0,3
