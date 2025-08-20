@@ -1,0 +1,38 @@
+{
+    "jabon": {
+        "precio": 1.5,
+        "cantidad": 20
+    },
+    "gel": {
+        "precio": 0.55,
+        "cantidad": 15
+    },
+    "shampoo": {
+        "precio": 2.0,
+        "cantidad": 25
+    },
+    "detergente": {
+        "precio": 0.75,
+        "cantidad": 18
+    },
+    "rasuradora": {
+        "precio": 2.0,
+        "cantidad": 12
+    },
+    "crema de peinar": {
+        "precio": 1.5,
+        "cantidad": 10
+    },
+    "cotonetes": {
+        "precio": 0.55,
+        "cantidad": 30
+    },
+    "papel higienico": {
+        "precio": 0.45,
+        "cantidad": 40
+    },
+    "paños humedos": {
+        "precio": 1.0,
+        "cantidad": 22
+    }
+}
