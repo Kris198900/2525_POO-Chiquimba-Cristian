@@ -1,0 +1,54 @@
+{
+    "carniceria": "Sabores Andinos",
+    "dueño": "Cristian Chiquimba",
+    "productos": [
+        {
+            "id": "CR001",
+            "nombre": "Carne de Res (kg)",
+            "cantidad": 50,
+            "precio": 5.5
+        },
+        {
+            "id": "CR002",
+            "nombre": "Carne de Cerdo (kg)",
+            "cantidad": 30,
+            "precio": 4.2
+        },
+        {
+            "id": "PO001",
+            "nombre": "Pechuga de Pollo (kg)",
+            "cantidad": 40,
+            "precio": 3.8
+        },
+        {
+            "id": "PO002",
+            "nombre": "Muslo de Pollo (kg)",
+            "cantidad": 35,
+            "precio": 3.2
+        },
+        {
+            "id": "HO001",
+            "nombre": "Huevos de Campo (docena)",
+            "cantidad": 100,
+            "precio": 2.5
+        },
+        {
+            "id": "HO002",
+            "nombre": "Huevos Orgánicos (docena)",
+            "cantidad": 50,
+            "precio": 3.75
+        },
+        {
+            "id": "QU001",
+            "nombre": "Queso Fresco (kg)",
+            "cantidad": 25,
+            "precio": 4.5
+        },
+        {
+            "id": "QU002",
+            "nombre": "Queso Mozzarella (kg)",
+            "cantidad": 20,
+            "precio": 6.8
+        }
+    ]
+}
