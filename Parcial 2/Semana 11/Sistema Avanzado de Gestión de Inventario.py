@@ -54,7 +54,7 @@ class Producto:
 
 class Inventario:
     def __init__(self):
-        """Inicializa el inventario con un diccionario vacío para almacenar productos."""
+        """Inicializa el inventario con un diccionario para almacenar productos."""
         self.__productos = {}  # Diccionario para acceso rápido por ID
 
     def añadir_producto(self, producto):
@@ -126,11 +126,11 @@ class Inventario:
             return
 
         print("\n=== INVENTARIO COMPLETO ===")
-        print(f"{'ID':<5} {'Nombre':<25} {'Cantidad':<10} {'Precio':<10}")
-        print("-" * 55)
+        print(f"{'ID':<5} {'Nombre':<30} {'Cantidad':<10} {'Precio':<10}")
+        print("-" * 60)
         for producto in self.__productos.values():
             print(
-                f"{producto.get_id():<5} {producto.get_nombre():<25} {producto.get_cantidad():<10} ${producto.get_precio():<9.2f}")
+                f"{producto.get_id():<5} {producto.get_nombre():<30} {producto.get_cantidad():<10} ${producto.get_precio():<9.2f}")
 
     def guardar_a_json(self, nombre_archivo="inventario.json"):
         """
@@ -193,14 +193,52 @@ class Inventario:
 def precargar_productos(inventario):
     """Precarga productos iniciales con precios reales de Ecuador."""
     productos_iniciales = [
-        Producto("CR001", "Carne de Res (kg)", 50, 5.50),
-        Producto("CR002", "Carne de Cerdo (kg)", 30, 4.20),
-        Producto("PO001", "Pechuga de Pollo (kg)", 40, 3.80),
-        Producto("PO002", "Muslo de Pollo (kg)", 35, 3.20),
+        # Carnes de Res
+        Producto("CR001", "Carne de Res (lomo) kg", 50, 6.50),
+        Producto("CR002", "Carne de Res (punta de anca) kg", 40, 5.00),
+        Producto("CR003", "Carne de Res (molida) kg", 60, 4.80),
+        Producto("CR004", "Carne de Res (costilla) kg", 35, 4.20),
+        Producto("CR005", "Hígado de Res kg", 30, 2.50),
+        Producto("CR006", "Molleja de Res kg", 25, 3.00),
+
+        # Carnes de Cerdo
+        Producto("CC001", "Carne de Cerdo (lomo) kg", 45, 5.20),
+        Producto("CC002", "Carne de Cerdo (costeleta) kg", 40, 4.80),
+        Producto("CC003", "Chuleta de Cerdo kg", 35, 5.50),
+        Producto("CC004", "Panceta de Cerdo kg", 30, 4.00),
+
+        # Pollos
+        Producto("PO001", "Pechuga de Pollo (kg)", 50, 3.80),
+        Producto("PO002", "Muslo de Pollo (kg)", 45, 3.20),
+        Producto("PO003", "Pollo Entero (kg)", 40, 3.00),
+        Producto("PO004", "Alitas de Pollo (kg)", 35, 3.50),
+        Producto("PO005", "Pata de Muslo (kg)", 40, 2.80),
+
+        # Huevos
         Producto("HO001", "Huevos de Campo (docena)", 100, 2.50),
         Producto("HO002", "Huevos Orgánicos (docena)", 50, 3.75),
-        Producto("QU001", "Queso Fresco (kg)", 25, 4.50),
-        Producto("QU002", "Queso Mozzarella (kg)", 20, 6.80)
+        Producto("HO003", "Huevos Extra Grandes (docena)", 80, 3.20),
+        Producto("HO004", "Huevos de Granja (docena)", 120, 2.80),
+
+        # Quesos
+        Producto("QU001", "Queso Fresco (kg)", 30, 4.50),
+        Producto("QU002", "Queso Mozzarella (kg)", 25, 6.80),
+        Producto("QU003", "Queso Crema (kg)", 20, 7.50),
+        Producto("QU004", "Queso de Cabra (kg)", 15, 8.00),
+        Producto("QU005", "Queso Parmesano (kg)", 10, 9.50),
+        Producto("QU006", "Queso Provolone (kg)", 15, 7.80),
+
+        # Embutidos
+        Producto("EM001", "Salchicha Tipo Viena (kg)", 40, 5.50),
+        Producto("EM002", "Mortadela (kg)", 35, 4.80),
+        Producto("EM003", "Jamón Cocido (kg)", 30, 6.00),
+        Producto("EM004", "Chorizo Español (kg)", 25, 7.20),
+        Producto("EM005", "Salchichón (kg)", 20, 6.50),
+
+        # Otros
+        Producto("OT001", "Mantequilla (kg)", 40, 5.80),
+        Producto("OT002", "Yogur Natural (litro)", 50, 2.20),
+        Producto("OT003", "Leche Fresca (litro)", 60, 1.80)
     ]
 
     for producto in productos_iniciales:
